@@ -50,7 +50,7 @@ Namespace TreeListCellMerging
                     Dim mergedBounds As New Rectangle(prevCell.Bounds.X, prevCell.Bounds.Y, currCell.Bounds.Right - prevCell.Bounds.X, prevCell.Bounds.Height)
                     prevCell.SetBounds(mergedBounds, New System.Windows.Forms.Padding(0))
                     mergedBounds.Inflate(-1, -1)
-                    prevCell.CalcViewInfo(GInfo.Graphics, Point.Empty)
+                    prevCell.CalcViewInfo(GInfo.Cache, Point.Empty)
                     prevCell.EditorViewInfo.Bounds = mergedBounds
 
                     ri.Cells.RemoveRange(i - 1, 2)

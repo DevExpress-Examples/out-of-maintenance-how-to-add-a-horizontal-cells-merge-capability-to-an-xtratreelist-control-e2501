@@ -33,9 +33,9 @@ Namespace TreeListCellMerging
 			Me.colPHONE1 = New DevExpress.XtraTreeList.Columns.TreeListColumn()
 			Me.colPHONE2 = New DevExpress.XtraTreeList.Columns.TreeListColumn()
 			Me.departmentsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.departmentsDataSet = New TreeListCellMerging.DepartmentsDataSet()
-			Me.departmentsTableAdapter = New TreeListCellMerging.DepartmentsDataSetTableAdapters.DepartmentsTableAdapter()
-			CType(Me.treeList1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.departmentsDataSet = New DepartmentsDataSet()
+            Me.departmentsTableAdapter = New DepartmentsDataSetTableAdapters.DepartmentsTableAdapter()
+            CType(Me.treeList1, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.departmentsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.departmentsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
@@ -131,8 +131,8 @@ Namespace TreeListCellMerging
 		Private WithEvents treeList1 As MyTreeList
 		Private departmentsDataSet As DepartmentsDataSet
 		Private departmentsBindingSource As System.Windows.Forms.BindingSource
-		Private departmentsTableAdapter As TreeListCellMerging.DepartmentsDataSetTableAdapters.DepartmentsTableAdapter
-		Private colDEPARTMENT As DevExpress.XtraTreeList.Columns.TreeListColumn
+        Private departmentsTableAdapter As DepartmentsDataSetTableAdapters.DepartmentsTableAdapter
+        Private colDEPARTMENT As DevExpress.XtraTreeList.Columns.TreeListColumn
 		Private colBUDGET As DevExpress.XtraTreeList.Columns.TreeListColumn
 		Private colLOCATION As DevExpress.XtraTreeList.Columns.TreeListColumn
 		Private colPHONE1 As DevExpress.XtraTreeList.Columns.TreeListColumn
