@@ -48,8 +48,10 @@ namespace TreeListCellMerging
                     }
 
                     Rectangle mergedBounds = new Rectangle(prevCell.Bounds.X, prevCell.Bounds.Y, currCell.Bounds.Right - prevCell.Bounds.X, prevCell.Bounds.Height);
+                    prevCell.SetBounds(mergedBounds, new System.Windows.Forms.Padding(0));
+                    mergedBounds.Inflate(-1, -1);
                     prevCell.CalcViewInfo(GInfo.Cache, Point.Empty);
-                    prevCell.SetBounds(mergedBounds, CellTextPadding);
+                    prevCell.EditorViewInfo.Bounds = mergedBounds;
 
                     ri.Cells.RemoveRange(i - 1, 2);
                     ri.Cells.Insert(i - 1, prevCell);
